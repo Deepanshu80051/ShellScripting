@@ -1,0 +1,36 @@
+//code   
+
+#!/bin/bash
+
+
+for (( i=0 ;i<=5; i++ ));
+do
+        echo $i
+done
+
+
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting (main)
+$ mkdir Loop
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting (main)
+$ cd Loop
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/Loop (main)
+$ vim forloop.sh
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/Loop (main)
+$ chmod 755 forloop.sh
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/Loop (main)
+$ ./forloop.sh
+0
+1
+2
+3
+4
+5
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/Loop (main)
+$ vim forloop.sh
+
