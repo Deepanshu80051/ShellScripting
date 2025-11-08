@@ -1,0 +1,297 @@
+//   CODE
+  #!/bin/bash
+
+read -p "enter you name " name
+if [[ $name == "baba" ]]; then
+        echo "hee"
+else
+        echo "new"
+fi
+
+
+echo "enter your age"
+read age
+if [[ $age == 18 ]]; then
+        echo "adult"
+else
+        echo "not"
+fi
+
+
+
+
+echo "enter a"
+read a
+
+if (( $a % 2 == 0 )); then
+        echo "even"
+else
+        echo "odd"
+fi
+
+
+//command
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting (main)
+$ mkdir condition
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting (main)
+$ cd condition
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/condition (main)
+$ vim con.sh
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/condition (main)
+$ chmod 755 con.sh
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/condition (main)
+$ bash con.sh
+enter you age 15
+con.sh: line 4: if[[15 ==18]]: command not found
+con.sh: line 5: syntax error near unexpected token `then'
+con.sh: line 5: `then '
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/condition (main)
+$ vim con.sh
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/condition (main)
+$ chmod 755 con.sh
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/condition (main)
+$ bash con.sh
+enter you age 13
+con.sh: line 4: if[[13 ==18]]: command not found
+con.sh: line 5: syntax error near unexpected token `then'
+con.sh: line 5: `then '
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/condition (main)
+$ vim con.sh
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/condition (main)
+$ chmod 755 con.sh
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/condition (main)
+$ bash con.sh
+enter you age 13
+con.sh: line 4: if[[13 == 18]]: command not found
+adult
+con.sh: line 6: syntax error near unexpected token `else'
+con.sh: line 6: `else '
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/condition (main)
+$ vim con.sh
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/condition (main)
+$ chmod 755 con.sh
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/condition (main)
+$ bash con.sh
+enter you age 13
+con.sh: line 4: if[[13 == 18]]: command not found
+con.sh: line 5: syntax error near unexpected token `then'
+con.sh: line 5: `then'
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/condition (main)
+$b
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/condition (main)
+$ vim con.sh
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/condition (main)
+$ chmod 755 con.sh
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/condition (main)
+$ bash con.sh
+enter you name baba
+con.sh: line 4: if[[baba == baba]]: command not found
+con.sh: line 5: syntax error near unexpected token `then'
+con.sh: line 5: `then'
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/condition (main)
+$ vim con.sh
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/condition (main)
+$ chmod 755 con.sh
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/condition (main)
+$ bash con.sh
+enter you name baba
+con.sh: line 4: if[[baba == baba]]: command not found
+con.sh: line 5: syntax error near unexpected token `then'
+con.sh: line 5: `then'
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/condition (main)
+$ vim con.sh
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/condition (main)
+$ chmod 755 con.sh
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/condition (main)
+$ ./con.sh
+enter you name baba
+./con.sh: line 4: syntax error near unexpected token `then'
+./con.sh: line 4: `if[[$name == "baba"]]; then'
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/condition (main)
+$ ^C
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/condition (main)
+$ vim con.sh
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/condition (main)
+$ chmod 755 con.sh
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/condition (main)
+$ ./con.sh
+enter you name baba
+./con.sh: line 4: syntax error near unexpected token `then'
+./con.sh: line 4: `if[[ $name == "baba" ]]; then'
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/condition (main)
+$ vim con.sh
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/condition (main)
+$ chmod 755 con.sh
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/condition (main)
+$ ./con.sh
+enter you name baba
+hee
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/condition (main)
+$ vim con.sh
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/condition (main)
+$ chmod 755 con.sh
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/condition (main)
+$ ./con.sh
+enter you name ba
+new
+enter your age
+17
+not
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/condition (main)
+$ vim con.sh
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/condition (main)
+$ chmod 755 con.sh
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/condition (main)
+$ vim con.sh
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/condition (main)
+$ chmod 755 con.sh
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/condition (main)
+$ ./con.sh
+enter you name bab
+new
+enter your age
+12
+not
+enter a
+2
+odd
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/condition (main)
+$ vim con.sh
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/condition (main)
+$ chmod 755 con.sh
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/condition (main)
+$ ./con.sh
+enter you name asa
+new
+enter your age
+23
+not
+enter a
+34
+./con.sh: line 25: syntax error in conditional expression
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/condition (main)
+$ vim con.sh
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/condition (main)
+$ chmod 755 con.sh
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/condition (main)
+$ ./con.sh
+enter you name sa
+new
+enter your age
+2
+not
+enter a
+1
+odd
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/condition (main)
+$ ./con.sh
+enter you name wewee
+new
+enter your age
+2
+not
+enter a
+44
+odd
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/condition (main)
+$ vim con.sh
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/condition (main)
+$ chmod 755 con.sh
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/condition (main)
+$ ./con.sh
+enter you name sas
+new
+enter your age
+32
+not
+enter a
+34
+./con.sh: line 25: conditional binary operator expected
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/condition (main)
+$.vim con.sh
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/condition (main)
+$ chmod 755 con.sh
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/condition (main)
+$ ./con.sh
+enter you name as
+new
+enter your age
+12
+not
+enter a
+34
+./con.sh: line 25: conditional binary operator expected
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/condition (main)
+$ vim con.sh
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/condition (main)
+$ chmod 755 con.sh
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/condition (main)
+$ ./con.sh
+enter you name sa
+new
+enter your age
+1
+not
+enter a
+23
+odd
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/condition (main)
+$ vim con.sh
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/condition (main)
+$ ./con.sh
+enter you name asdas
+new
+enter your age
+3
+not
+enter a
+44
+even
