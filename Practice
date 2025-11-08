@@ -1,0 +1,288 @@
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~
+$ cd desktop
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop
+$ cd Shell-Scripting
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting
+$ vim hello.txt
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting
+$ vim hello.sh
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting
+$ vim hello.sh
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting
+$ which bash
+/usr/bin/bash
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting
+$ vim hello.sh
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting
+$ ls -l
+total 2
+drwxr-xr-x 1 HimSe 197609  0 Nov  8 12:04 ShellScripting/
+-rwxr-xr-x 1 HimSe 197609 46 Nov  8 20:59 hello.sh*
+-rw-r--r-- 1 HimSe 197609 38 Nov  8 20:50 hello.txt
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting
+$ chmod 754 hello.sh
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting
+$ ls -l
+total 2
+drwxr-xr-x 1 HimSe 197609  0 Nov  8 12:04 ShellScripting/
+-rwxr-xr-x 1 HimSe 197609 46 Nov  8 20:59 hello.sh*
+-rw-r--r-- 1 HimSe 197609 38 Nov  8 20:50 hello.txt
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting
+$ ./hello.sh
+bash: ./hello.sh: cannot execute: required file not found
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting
+$ ls
+ShellScripting/  hello.sh*  hello.txt
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting
+$ cd hello.sh
+bash: cd: hello.sh: Not a directory
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting
+$ ./hello.sh
+bash: ./hello.sh: cannot execute: required file not found
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting
+$ chmod 754 hello.sh
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting
+$ ./hello.sh
+bash: ./hello.sh: cannot execute: required file not found
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting
+$ rm hello.txt
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting
+$ ls
+ShellScripting/  hello.sh*
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting
+$ cd shellScripting
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting (main)
+$ chmod 754 hello.sh
+chmod: cannot access 'hello.sh': No such file or directory
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting (main)
+$ ls
+day01/
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting (main)
+$ cd day01
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/day01 (main)
+$ ls
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/day01 (main)
+$ vim baba.sh
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/day01 (main)
+$ ./baba.sh
+bash: ./baba.sh: cannot execute: required file not found
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/day01 (main)
+$ chmod 754 baba.sh
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/day01 (main)
+$ chmod 754 baba.sh
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/day01 (main)
+$ ./baba.sh
+bash: ./baba.sh: cannot execute: required file not found
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/day01 (main)
+$ vim baba.sh
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/day01 (main)
+$ ls -l
+total 1
+-rwxr-xr-x 1 HimSe 197609 33 Nov  8 21:04 baba.sh*
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/day01 (main)
+$ ./baba.sh
+bash: ./baba.sh: cannot execute: required file not found
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/day01 (main)
+$ ^C
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/day01 (main)
+$ chmod +x baba.h
+bash: $'\302\203chmod': command not found
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/day01 (main)
+$ vim baba.sh
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/day01 (main)
+$ ls =l
+ls: cannot access '=l': No such file or directory
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/day01 (main)
+$ ls -l
+total 1
+-rwxr-xr-x 1 HimSe 197609 34 Nov  8 21:07 baba.sh*
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/day01 (main)
+$ ./baba.sh
+./baba.sh: line 2: hello: command not found
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/day01 (main)
+$ ls
+baba.sh*
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/day01 (main)
+chmod +x baba.sh
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/day01 (main)
+$ ,/baba.sh
+bash: ,/baba.sh: No such file or directory
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/day01 (main)
+$ ,/baba.sh*
+bash: ,/baba.sh*: No such file or directory
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/day01 (main)
+$ ls
+baba.sh*
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/day01 (main)
+$ ./baba.sh
+./baba.sh: line 2: hello: command not found
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/day01 (main)
+$ vim baba.sh
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/day01 (main)
+$ cat baba.sh
+#!/bin/bash
+hello my name is deee
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/day01 (main)
+$ vim baba.sh
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/day01 (main)
+$ ./baba.sh
+./baba.sh: line 2: hello: command not found
+hello
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/day01 (main)
+$ cat baba.sh
+#!/bin/bash
+hello my name is deee
+
+
+echo "hello"
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/day01 (main)
+$ vim baba.sh
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/day01 (main)
+$ ./baba.sh
+./baba.sh: line 2: hello: command not found
+hello
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/day01 (main)
+$ chmod 755 baba.sh
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/day01 (main)
+$ ./baba.sh
+./baba.sh: line 2: hello: command not found
+hello
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/day01 (main)
+$ cat baba.sh
+#!/bin/bash
+hello my name is deee
+
+
+echo "hello"
+
+
+<< comment_kar_raha
+
+
+yaha pe hum log comment kar raha hu
+
+
+comment_kar_raha
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/day01 (main)
+$ cd ..
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting (main)
+$ mkdir variable
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting (main)
+$ cd varibale
+bash: cd: varibale: No such file or directory
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting (main)
+$ cd variavle
+bash: cd: variavle: No such file or directory
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting (main)
+$ cd variable
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/variable (main)
+$ vim var.sh
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/variable (main)
+$ chmod 755 var.sh
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/variable (main)
+$ ./var.sh
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/variable (main)
+$ vim var.sh
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/variable (main)
+$ ./var.sh
+./var.sh: line 5: unexpected EOF while looking for matching `"'
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/variable (main)
+$ chmod 755 var.sh
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/variable (main)
+$ ./var.sh
+./var.sh: line 5: unexpected EOF while looking for matching `"'
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/variable (main)
+$ vim var.sh
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/variable (main)
+$ chmod 755 var.sh
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/variable (main)
+$ ./var.sh
+my name is baba:
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/variable (main)
+$ vim var.sh
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/variable (main)
+$ chmod 755 var.sh
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/variable (main)
+$ ./var.sh
+my name is baba:
+./var.sh: line 12: echoenter your name :: command not found
+baba
+my name is baba and date is Sat Nov  8 21:29:49 IST 2025
+
+HimSe@LAPTOP-AA05CJRT MINGW64 ~/desktop/Shell-Scripting/shellScripting/variable (main)
+$ bash var.sh
+my name is baba:
+var.sh: line 12: echoenter your name :: command not found
+ninja
+my name is ninja and date is Sat Nov  8 21:30:55 IST 2025
