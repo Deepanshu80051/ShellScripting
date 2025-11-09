@@ -1,0 +1,91 @@
+1. Write a shell script to print "Hello World".
+2. Write a script to display the current date and time.
+3. Write a script to check if a file exists.
+4. Write a script to take user input and print it.
+5. Write a script to add two numbers given by the user.
+6. Write a script to check if a number is even or odd.
+7. Write a script to display all files and directories in the current path.
+8. Write a script to count the number of lines in a file.
+9. Write a script to check if a user is root.
+10. Write a script to print first 10 natural numbers using a loop.
+
+//answer or code
+
+#!/bin/bash
+
+
+
+
+<< comment
+
+echo "hello"
+
+
+
+echo "date and time id $(date)"
+
+
+
+
+
+read -p "enter your file name  : " file
+if [[ $file == "baba" ]];then
+        echo"file exists karta h"
+else
+        echo "file does not exits"
+fi
+
+
+
+read -p "enter your name " name
+echo "enter by user name $name"
+
+
+
+
+
+echo "Enter first and Second number :"
+read a
+read b
+c=$((a+b))
+echo "the sum is $c"
+
+
+
+
+read -p "Enter your number" num
+if [[ $((num%2)) == 0 ]];then
+        echo "even"
+else
+        echo "odd"
+fi
+
+
+
+echo "all files and directories"
+ls -al
+
+
+
+
+read -p "enter your file name " file
+[[ -f $file ]] && wc -l < $file || echo "file not found"
+
+comment
+
+
+if [[ $EUID -eq 0 ]];then
+        echo "user root hai"
+else
+        echo "not a user root"
+
+fi
+
+
+
+
+
+for ((i=1 ; i<=10 ;i++));
+do
+        echo "$i"
+done
